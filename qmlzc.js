@@ -1,3 +1,4 @@
+*/
 const $ = new Env('全民来找茬');
 let status;
 status = (status = ($.getval("zctatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
@@ -11,7 +12,7 @@ let userid = ''
 let sign = ''
 !(async () => {
   if (typeof $request !== "undefined") {
-   // await zcck()
+    await normal()
    
   } else {zcbodyArr.push($.getdata('zcbody'))
     zchdArr.push($.getdata('zchd'))
@@ -30,8 +31,8 @@ let sign = ''
           zchd = zchdArr[i];
           $.index = i + 1;
           console.log(`\n开始【zc${$.index}】`)
-    await normal();
-    await $.wait(1000);
+   // await normal();
+    //await $.wait(1000);
     //await zczl();
     //await $.wait(3000);
     //await zctx();}}}})()
@@ -47,32 +48,34 @@ let sign = ''
     $.log(zchd)
    $.msg($.name,"",'全民来找茬'+`${status}` +'数据获取成功！') }}
 ##普通领红包
- function normal(timeout = 0) {
+
+     
+          
+function normal(timeout = 0) {
 return new Promise((resolve) => {
-token = zcurl.match(/api_token=(\S+)&/)[1]
+  token = zcurl.match(/api_token=(\S+)&/)[1]
 userid = zcurl.match(/user_id=(\d+)&/)[1]
 sign = zcurl.match(/sign=(\w+)/)[1]
 let url = {
-  //https://qmlzc-api.lw0591.com/v1/normal_award?api_token=zy49VbpO0sgDC6iSH5ETgeEjdwDruQdp&hotversion=1.000&timestamp=1618516067829&user_id=7094490&sign=33c4306746443d49bd16d2cc130e8614
         url : `https://qmlzc-api.lw0591.com/v1/normal_award?api_token=${token}+&hotversion=1.000&timestamp=1618516067829&user_id=${userid}+&sign=${sign}`,
         headers : JSON.parse(zchd),
 }
       $.get(url, async (err, resp, data) => {
         try {
+           
     const result = JSON.parse(data)
-        if(result.status == 0){  
-} else {
-       console.log('\n普通领红包: '+result.msg)
+        if(result.code == 200){
+        //console.log('\n金币数量： '+result.data.coin+'个'+'\n现金：'+resule.data.balance+'元')
+    }else{
+        console.log('\n普通领红包： '+result.message)
 }
         } catch (e) {
-          //$.logErr(e, resp);
         } finally {
           resolve()
         }
     },timeout)
   })
 }
-          
           
           
           
