@@ -30,8 +30,8 @@ let sign = ''
           zchd = zchdArr[i];
           $.index = i + 1;
           console.log(`\n开始【zc${$.index}】`)
-    //await zczy();
-    //await $.wait(1000);
+    await normal();
+    await $.wait(1000);
     //await zczl();
     //await $.wait(3000);
     //await zctx();}}}})()
@@ -44,7 +44,7 @@ let sign = ''
   $.log(zcurl)
   const zchd = JSON.stringify($request.headers)
   if(zchd)    $.setdata(zchd,`zchd${status}`)
-    //$.log(zchd)
+    $.log(zchd)
    $.msg($.name,"",'全民来找茬'+`${status}` +'数据获取成功！') }}
 ##普通领红包
  function normal(timeout = 0) {
