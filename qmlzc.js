@@ -1,63 +1,60 @@
-*/
-const $ = new Env('全民来找茬');
-let status;
-status = (status = ($.getval("zctatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
-const zcbodyArr = [], zchdArr = [],zccount = ''
-let tempDate = new Date();
-let zcbody = $.getdata('zcbody')
-let zchd = $.getdata('zchd')
-let zcurl = $.getdata('zcurl')
-let token = ''
-let userid = ''
-let sign = ''
-!(async () => {
-  if (typeof $request !== "undefined") {
-    await zcck()
-   
-  } else {zcbodyArr.push($.getdata('zcbody'))
-    zchdArr.push($.getdata('zchd'))
-    
-    let zccount = ($.getval('zccount') || '1');
-  for (let i = 2; i <= zccount; i++) {
-    
-    zcbodyArr.push($.getdata(`zcbody${i}`))
-    zchdArr.push($.getdata(`zchd${i}`))
-  }
-    console.log(`------------- 共${zchdArr.length}个账号-------------\n`)
-          for (let i = 0; i < zchdArr.length; i++) {
-        if (zchdArr[i]) {
-         
-          zcbody = zcbodyArr[i];
-          zchd = zchdArr[i];
-          $.index = i + 1;
-          console.log(`\n开始【zc${$.index}】`)
-   // await normal();
-    //await $.wait(1000);
-    //await zczl();
-    //await $.wait(3000);
-    //await zctx();}}}})()
-  .catch((e) => $.logErr(e))
-  .finally(() => $.done())
-  function zcck() {
-  if ($request.url.indexOf("notice") > -1) {
- const zcurl = $request.url
-  if(zcurl)     $.setdata(zcurl,`zcurl${status}`)
-  $.log(zcurl)
-  const zchd = JSON.stringify($request.headers)
-  if(zchd)    $.setdata(zchd,`zchd${status}`)
-    $.log(zchd)
-   $.msg($.name,"",'全民来找茬'+`${status}` +'数据获取成功！') }}
+const $ = new Env('全民来找茬'); 
+ let status; 
+ status = (status = ($.getval("zcstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符 
+ const zcurlArr = [], zchdArr = [],zccount = '' 
+ let times = Math.round(Date.now() / 1000) 
+ let zcurl = $.getdata('zcurl') 
+ let zchd = $.getdata('zchd') 
+ let sjs = 1 
+ let token = ""
+
+ !(async () => { 
+ if (typeof $request !== "undefined") { 
+ await zcck() 
+   } else {zcurlArr.push($.getdata('zcurl')) 
+ zchdArr.push($.getdata('zchd')) 
+ let zccount = ($.getval('zccount') || '1'); 
+ for (let i = 2; i <= zccount; i++) { 
+ zcurlArr.push($.getdata(`zcurl${i}`)) 
+ zchdArr.push($.getdata(`zchd${i}`)) 
+ } 
+ console.log(`------------- 共${zchdArr.length}个账号-------------\n`) 
+ for (let i = 0; i < zchdArr.length; i++) { 
+ if (zchdArr[i]) { 
+   zcurl = zcurlArr[i]; 
+ zchd = zchdArr[i]; 
+ $.index = i + 1; 
+ console.log(`\n开始【快乐猜歌${$.index}】`) 
+ await normal(); 
+   } 
+ }} 
+   })() 
+ .catch((e) => $.logErr(e)) 
+ .finally(() => $.done()) 
+ //数据获取 
+     function zcck() { 
+ if ($request.url.indexOf("notice") > -1) { 
+ const zcurl = $request.url 
+
+ if(zcurl) $.setdata(zcurl,`zcurl${status}`) 
+ $.log(zcurl) 
+ const zchd = JSON.stringify($request.headers) 
+ if(zchd) $.setdata(zchd,`zchd${status}`) 
+ $.log(zchd) 
+ $.msg($.name,"",'全民来找茬'+`${status}` +'数据获取成功！') 
+ } 
+ } 
 ##普通领红包
 
      
           
 function normal(timeout = 0) {
 return new Promise((resolve) => {
-  token = zcurl.match(/api_token=(\S+)&/)[1]
-userid = zcurl.match(/user_id=(\d+)&/)[1]
-sign = zcurl.match(/sign=(\w+)/)[1]
+token = zcurl.match(/api_token=(\S+)&/)[1]
+//userid = zcurl.match(/user_id=(\d+)&/)[1]
+//sign = zcurl.match(/sign=(\w+)/)[1]
 let url = {
-        url : `https://qmlzc-api.lw0591.com/v1/normal_award?api_token=${token}+&hotversion=1.000&timestamp=1618516067829&user_id=${userid}+&sign=${sign}`,
+        url : `https://qmlzc-api.lw0591.com/v1/normal_award?api_token=${token}`,
         headers : JSON.parse(zchd),
 }
       $.get(url, async (err, resp, data) => {
