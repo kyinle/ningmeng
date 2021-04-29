@@ -25,7 +25,7 @@ const $ = new Env('全民来找茬');
  zchd = zchdArr[i]; 
  $.index = i + 1; 
  console.log(`\n开始【快乐猜歌${$.index}】`) 
- //await normal(); 
+ await zczy(); 
    } 
  }} 
    })() 
@@ -45,7 +45,22 @@ const $ = new Env('全民来找茬');
  } 
  } 
 //普通领红包
-
+function zczy(timeout = 0) {
+return new Promise((resolve) => {
+token = zcurl.match(/api_token=(\S+)/)[1]
+let url = {
+    url : `https://qmlzc-api.lw0591.com/v1/normal_award?api_token=${token}`,
+    headers : JSON.parse(doghd),
+    //body : dogbody,}
+  $.get(url, async (err, resp, data) => {
+    try {
+    const result = JSON.parse(data)
+    if(result.data == 1){
+  } else {}
+  } catch (e) {
+  } finally {
+  resolve()}
+  },timeout)})}
      
           
 
