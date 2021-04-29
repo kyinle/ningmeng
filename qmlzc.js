@@ -50,7 +50,7 @@ return new Promise((resolve) => {
 token = zcurl.match(/api_token=(\S+)/)[1]
 let url = {
     url : `https://qmlzc-api.lw0591.com/v1/normal_award?api_token=${token}`,
-    headers : JSON.parse(doghd),
+    headers : JSON.parse(zchd),
     //body : dogbody,}
   $.get(url, async (err, resp, data) => {
     try {
