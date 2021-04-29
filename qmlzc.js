@@ -39,7 +39,7 @@ let sign = ''
   .catch((e) => $.logErr(e))
   .finally(() => $.done())
           function zcck() {
-  if ($request.url.indexOf("api_token=") > -1) {
+  if ($request.url.indexOf("notice") > -1) {
  const zcurl = $request.url
   if(zcurl)     $.setdata(zcurl,`zcurl${status}`)
   $.log(zcurl)
