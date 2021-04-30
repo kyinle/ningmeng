@@ -23,3 +23,7 @@ https://sunnytown.hyskgame.com/api/messages\SaccessToken=\w+&msgtype=system_getG
 [task_local]
 #柠檬富豪小镇
 */10 * * * * http://nm999.cn/fhxz.js, tag=柠檬富豪小镇, enabled=true
+
+BOXJS订阅
+
+http://nm66.top/nm.box.json
