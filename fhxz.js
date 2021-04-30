@@ -59,7 +59,7 @@ let rw1 = '[{"type":"dailyQuest_receiveReward","data":{"questDefId":2001,"questT
  $.index = i + 1; 
  console.log(`\n开始【富豪小镇${$.index}】`) 
   await  quantijs(); //全体加速
- 
+ await $.wait(1000);
   
   await jqgj(); //机器管家
     await $.wait(15000);
@@ -177,7 +177,7 @@ await $.wait(1000);
 await $.wait(10000);
  await scd7();
 await $.wait(1000);
- await quantijs();
+ //await quantijs();
    } 
  }} 
    })() 
