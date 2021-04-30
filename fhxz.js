@@ -1,3 +1,27 @@
+/*
+微信公众号：柠檬玩机交流
+柠檬富豪小镇
+下载地址：https://hyskgame.com/apps/fuhaoxiaozhen/wxshare/index.html?createAt=1619750062&senderUserId=152420&senderInviteCode=HG7X&entryPointData=eyJzZW5kZXJVc2VySWQiOiIxNTI0MjAifQ
+
+TG电报群: https://t.me/ningmeng666
+微信公众号：柠檬玩机交流
+圈X
+[task_local]
+#柠檬富豪小镇
+0 8 * * * https://ghproxy.com/https://raw.githubusercontent.com/panghu999/ningmeng/main/fhxz.js, tag=柠檬富豪小镇, enabled=true
+[rewrite_local]
+#柠檬富豪小镇
+https://sunnytown.hyskgame.com/api/messages\WaccessToken=\w+&msgtype=gfunc_getGfuncInfo url script-request-body https://ghproxy.com/https://raw.githubusercontent.com/panghu999/ningmeng/main/fhxz.js
+[MITM]
+hostname = sunnytown.hyskgame.com
+#loon
+https://sunnytown.hyskgame.com/api/messages\WaccessToken=\w+&msgtype=gfunc_getGfuncInfo url script-request-body https://ghproxy.com/https://raw.githubusercontent.com/panghu999/ningmeng/main/fhxz.js, requires-body=true, timeout=10, tag=柠檬富豪小镇
+#surge
+柠檬富豪小镇 = type=https://sunnytown.hyskgame.com/api/messages\WaccessToken=\w+&msgtype=gfunc_getGfuncInfo,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/panghu999/ningmeng/main/fhxz.js,script-update-interval=0
+
+
+
+*/
 const $ = new Env('富豪小镇'); 
  let status; 
  status = (status = ($.getval("fhxzstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符 
