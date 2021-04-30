@@ -237,7 +237,7 @@ body : cj,
 
    try { 
 if(data.match(/lottery_draw/) == 'lottery_draw'){ 
- $.msg(`抽奖成功 剩余次数:`+data.match(/remainingTimes":(\d+),/)[1])
+ $.log(`抽奖成功 剩余次数:`+data.match(/remainingTimes":(\d+),/)[1])
 
  } else { 
  $.log(`抽奖次数不足`) 
