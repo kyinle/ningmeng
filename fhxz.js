@@ -67,47 +67,48 @@ await zdcj();//自动抽奖
 await krqq();//热气球/汽车
   await $.wait(1000);
    await xld1();
- await $.wait(5000);
+ await $.wait(10000);
  await sqd1();
-await $.wait(2000);
+await $.wait(10000);
  await scd1();
 await $.wait(1000);
   await xld2();
- await $.wait(5000);
+ await $.wait(10000);
  await sqd2();
-await $.wait(2000);
+await $.wait(10000);
  await scd2();
 await $.wait(1000);
   await xld3();
- await $.wait(5000);
+ await $.wait(10000);
  await sqd3();
-await $.wait(2000);
+await $.wait(10000);
  await scd3();
 await $.wait(1000);
   await xld4();
- await $.wait(5000);
+ await $.wait(10000);
  await sqd4();
-await $.wait(2000);
+await $.wait(10000);
  await scd4();
 await $.wait(1000);
   await xld5();
- await $.wait(5000);
+ await $.wait(10000);
  await sqd5();
-await $.wait(2000);
+await $.wait(10000);
  await scd5();
 await $.wait(1000);
   await xld6();
- await $.wait(5000);
+ await $.wait(10000);
  await sqd6();
-await $.wait(2000);
+await $.wait(10000);
  await scd6();
 await $.wait(1000);
   await xld7();
- await $.wait(5000);
+ await $.wait(10000);
  await sqd7();
-await $.wait(2000);
+await $.wait(10000);
  await scd7();
 await $.wait(1000);
+ await quantijs();
    } 
  }} 
    })() 
@@ -270,7 +271,7 @@ body : xl1,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_repair'){ 
+if(data.match(/farmland_repair/) == 'farmland_repair'){ 
  $.msg(`1号田修理成功`)
 
 
@@ -300,7 +301,7 @@ body : xl2,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_repair'){ 
+if(data.match(/farmland_repair/) == 'farmland_repair'){ 
  $.msg(`2号田修理成功`)
 
 
@@ -331,7 +332,7 @@ body : xl3,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_repair'){ 
+if(data.match(/farmland_repair/) == 'farmland_repair'){ 
  $.msg(`3号田修理成功`)
 
 
@@ -361,7 +362,7 @@ body : xl4,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_repair'){ 
+if(data.match(/farmland_repair/) == 'farmland_repair'){ 
  $.msg(`4号田修理成功`)
 
 
@@ -392,7 +393,7 @@ body : xl5,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_repair'){ 
+if(data.match(/farmland_repair/) == 'farmland_repair'){ 
  $.msg(`5号田修理成功`)
 
 
@@ -423,7 +424,7 @@ body : xl6,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_repair'){ 
+if(data.match(/farmland_repair/) == 'farmland_repair'){ 
  $.msg(`6号田修理成功`)
 
 
@@ -453,7 +454,7 @@ body : xl7,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_repair'){ 
+if(data.match(/farmland_repair/) == 'farmland_repair'){ 
  $.msg(`7号田修理成功`)
 
 
@@ -484,7 +485,7 @@ body : sq1,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_harvest'){ 
+if(data.match(/farmland_harvest/) == 'farmland_harvest'){ 
  $.msg(`1号田收取成功`)
 
 
@@ -514,7 +515,7 @@ body : sq2,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_harvest'){ 
+if(data.match(/farmland_harvest/) == 'farmland_harvest'){ 
  $.msg(`2号田收取成功`)
 
 
@@ -545,7 +546,7 @@ body : sq3,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_harvest'){ 
+if(data.match(/farmland_harvest/) == 'farmland_harvest'){ 
  $.msg(`3号田收取成功`)
 
 
@@ -576,7 +577,7 @@ body : sq4,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_harvest'){ 
+if(data.match(/farmland_harvest/) == 'farmland_harvest'){ 
  $.msg(`4号田收取成功`)
 
 
@@ -609,7 +610,7 @@ body : sq5,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_harvest'){ 
+if(data.match(/farmland_harvest/) == 'farmland_harvest'){ 
  $.msg(`5号田收取成功`)
 
 
@@ -640,7 +641,7 @@ body : sq6,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_harvest'){ 
+if(data.match(/farmland_harvest/) == 'farmland_harvest'){  
  $.msg(`6号田收取成功`)
 
 
@@ -671,7 +672,7 @@ body : sq7,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_harvest'){ 
+if(data.match(/farmland_harvest/) == 'farmland_harvest'){  
  $.msg(`7号田收取成功`)
 
 
@@ -704,7 +705,7 @@ body : sc1,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_plant'){ 
+if(data.match(/farmland_plant/) == 'farmland_plant'){ 
  $.msg(`1号田生产成功`)
 
 
@@ -735,7 +736,7 @@ body : sc2,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_plant'){ 
+if(data.match(/farmland_plant/) == 'farmland_plant'){ 
  $.msg(`2号田生产成功`)
 
 
@@ -766,7 +767,7 @@ body : sc3,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_plant'){ 
+if(data.match(/farmland_plant/) == 'farmland_plant'){ 
  $.msg(`3号田生产成功`)
 
 
@@ -797,7 +798,7 @@ body : sc4,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_plant'){ 
+if(data.match(/farmland_plant/) == 'farmland_plant'){ 
  $.msg(`4号田生产成功`)
 
 
@@ -828,7 +829,7 @@ body : sc5,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_plant'){ 
+if(data.match(/farmland_plant/) == 'farmland_plant'){ 
  $.msg(`5号田生产成功`)
 
 
@@ -859,7 +860,7 @@ body : sc6,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_plant'){ 
+if(data.match(/farmland_plant/) == 'farmland_plant'){ 
  $.msg(`6号田生产成功`)
 
 
@@ -891,7 +892,7 @@ body : sc7,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_plant'){ 
+if(data.match(/farmland_plant/) == 'farmland_plant'){ 
  $.msg(`7号田生产成功`)
 
 
@@ -923,48 +924,48 @@ body : sc7,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_speedUpAll'){ 
+if(data.match(/farmland_speedUpAll/) == 'farmland_speedUpAll'){ 
  $.msg(`全体加速成功 剩余次数：`+data.match(/remainingALLTimes":(\d+),/)[1])
  await xld1();
- await $.wait(5000);
+ await $.wait(10000);
  await sqd1();
-await $.wait(2000);
+await $.wait(10000);
  await scd1();
 await $.wait(1000);
   await xld2();
- await $.wait(5000);
+ await $.wait(10000);
  await sqd2();
-await $.wait(2000);
+await $.wait(10000);
  await scd2();
 await $.wait(1000);
   await xld3();
- await $.wait(5000);
+ await $.wait(10000);
  await sqd3();
-await $.wait(2000);
+await $.wait(10000);
  await scd3();
 await $.wait(1000);
   await xld4();
- await $.wait(5000);
+ await $.wait(10000);
  await sqd4();
-await $.wait(2000);
+await $.wait(10000);
  await scd4();
 await $.wait(1000);
   await xld5();
- await $.wait(5000);
+ await $.wait(10000);
  await sqd5();
-await $.wait(2000);
+await $.wait(10000);
  await scd5();
 await $.wait(1000);
   await xld6();
- await $.wait(5000);
+ await $.wait(10000);
  await sqd6();
-await $.wait(2000);
+await $.wait(10000);
  await scd6();
 await $.wait(1000);
   await xld7();
- await $.wait(5000);
+ await $.wait(10000);
  await sqd7();
-await $.wait(2000);
+await $.wait(10000);
  await scd7();
 await $.wait(1000);
  } else { 
@@ -996,7 +997,7 @@ body : ptjs1,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_speedUp'){ 
+if(data.match(/farmland_speedUp/) == 'farmland_speedUp'){ 
  $.msg(`1号田普通加速成功`)
 
 
@@ -1027,7 +1028,7 @@ body : ptjs2,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_speedUp'){ 
+if(data.match(/farmland_speedUp/) == 'farmland_speedUp'){ 
  $.msg(`2号田普通加速成功`)
 
 
@@ -1057,7 +1058,7 @@ body : ptjs3,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_speedUp'){ 
+if(data.match(/farmland_speedUp/) == 'farmland_speedUp'){ 
  $.msg(`3号田普通加速成功`)
 
 
@@ -1089,7 +1090,7 @@ body : ptjs4,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_speedUp'){ 
+if(data.match(/farmland_speedUp/) == 'farmland_speedUp'){ 
  $.msg(`4号田普通加速成功`)
 
 
@@ -1119,7 +1120,7 @@ body : ptjs5,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_speedUp'){ 
+if(data.match(/farmland_speedUp/) == 'farmland_speedUp'){ 
  $.msg(`5号田普通加速成功`)
 
 
@@ -1150,7 +1151,7 @@ body : ptjs6,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_speedUp'){ 
+if(data.match(/farmland_speedUp/) == 'farmland_speedUp'){ 
  $.msg(`6号田普通加速成功`)
 
 
@@ -1180,7 +1181,7 @@ body : ptjs7,
 
    try { 
 
-if(data.match(/carBox_receiveBoxReward/) == 'farmland_speedUp'){ 
+if(data.match(/farmland_speedUp/) == 'farmland_speedUp'){ 
  $.msg(`7号田普通加速成功`)
 
 
