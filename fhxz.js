@@ -66,7 +66,73 @@ await zdcj();//自动抽奖
     await $.wait(10000);
 await krqq();//热气球/汽车
   await $.wait(1000);
+     await ptjsd1();
+   await $.wait(10000);
    await xld1();
+   await $.wait(10000);
+    await sqd1();
+await $.wait(10000);
+ await scd1();
+  await $.wait(1000);
+  
+   await ptjsd2();
+   await $.wait(10000);
+   await xld2();
+   await $.wait(10000);
+    await sqd2();
+await $.wait(10000);
+ await scd2();
+  await $.wait(1000);
+  
+   await ptjsd3();
+   await $.wait(10000);
+   await xld3();
+   await $.wait(10000);
+    await sqd3();
+await $.wait(10000);
+ await scd3();
+  await $.wait(1000);
+  
+   await ptjsd4();
+   await $.wait(10000);
+   await xld4();
+   await $.wait(10000);
+    await sqd4();
+await $.wait(10000);
+ await scd4();
+  await $.wait(1000);
+  
+   await ptjsd5();
+   await $.wait(10000);
+   await xld5();
+   await $.wait(10000);
+    await sqd5();
+await $.wait(10000);
+ await scd5();
+  await $.wait(1000);
+  
+   await ptjsd6();
+   await $.wait(10000);
+   await xld6();
+   await $.wait(10000);
+    await sqd6();
+await $.wait(10000);
+ await scd6();
+  await $.wait(1000);
+  
+   await ptjsd7();
+   await $.wait(10000);
+   await xld7();
+   await $.wait(10000);
+    await sqd7();
+await $.wait(10000);
+ await scd7();
+  await $.wait(1000);
+  
+  
+  
+  
+  await xld1();
  await $.wait(10000);
  await sqd1();
 await $.wait(10000);
@@ -147,7 +213,7 @@ if(data.match(/lottery_draw/) == 'lottery_draw'){
  $.msg(`抽奖成功 剩余次数:`+data.match(/remainingTimes":(\d+),/)[1])
 
  } else { 
- $.log(`抽奖次数不足或`) 
+ $.log(`抽奖次数不足`) 
  
 
  } 
@@ -918,7 +984,7 @@ id = fhxzurl.match(/Token=\S+&/)
    let url = { 
  url : 'https://sunnytown.hyskgame.com/api/messages?access'+id+'msgtype=farmland_speedUpAll', 
 
-body : sc7,
+body : qtjs,
    } 
  $.post(url, async (err, resp, data) => { 
 
