@@ -23,7 +23,7 @@ const $ = new Env('小奶猫获取直播源');
    xnmurl = xnmurlArr[i]; 
  xnmhd = xnmhdArr[i]; 
  $.index = i + 1; 
- console.log(`\n开始【富豪小镇${$.index}】`) 
+ console.log(`\n开始【小奶猫${$.index}】`) 
  
  
     } 
@@ -35,8 +35,7 @@ const $ = new Env('小奶猫获取直播源');
      function xnmck() { 
  if ($request.url.indexOf("private") > -1) { 
  const xnmurl = $request.url 
-//id = xnmurl.match(/uid=(\d+S+)/)[1]
-//$.log(id)
+
  if(xnmurl) $.setdata(xnmurl,`xnmurl${status}`) 
  $.log(xnmurl) 
  const xnmhd = JSON.stringify($request.headers) 
@@ -51,8 +50,8 @@ function getsj(timeout = 0) {
    
 
    let url = { 
- url : xnmurl, 
-headers:xnmhd,
+ url : $.xnmurl, 
+headers:$.xnmhd,
 
    } 
  $.get(url, async (err, resp, data) => { 
