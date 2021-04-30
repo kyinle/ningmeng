@@ -45,64 +45,7 @@ const $ = new Env('小奶猫获取直播源');
  } 
  } 
 
-function getsj(timeout = 0) { 
- return new Promise((resolve) => { 
-   
 
-   let url = { 
- url : $.xnmurl, 
-headers:$.xnmhd,
-
-   } 
- $.get(url, async (err, resp, data) => { 
-
-   try { 
-if(data) != ''){ 
- $.log(`加密数据获取成功`)
-let jmdata = data
- } else { 
- $.log(`加密数据获取失败`) 
- 
-
- } 
-   } catch (e) { 
- $.logErr(e, resp); 
- } finally { 
- resolve() 
- } 
- },timeout) 
- }) 
- } 
-
-function geturl(timeout = 0) { 
- return new Promise((resolve) => { 
-   
-
-   let url = { 
- url : `http://47.242.106.199/nmurl.php?data=`'+jmdata', 
-headers:`User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2`,
-
-   } 
- $.get(url, async (err, resp, data) => { 
-
-   try { 
-const result = JSON.parse(data)
-if(result.code) == 0){ 
- $.msg(`播放数据获取成功:`+data.stream['pull_url'])
-
- } else { 
- $.log(`播放数据获取失败`) 
- 
-
- } 
-   } catch (e) { 
- $.logErr(e, resp); 
- } finally { 
- resolve() 
- } 
- },timeout) 
- }) 
- } 
 
 
 
