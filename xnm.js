@@ -33,7 +33,7 @@ const $ = new Env('小奶猫获取直播源');
  .finally(() => $.done()) 
  //数据获取 
      function xnmck() { 
- if ($request.url.indexOf("getPrivateLimit") > -1) { 
+ if ($request.url.indexOf("private") > -1) { 
  const xnmurl = $request.url 
 //id = xnmurl.match(/uid=(\d+S+)/)[1]
 //$.log(id)
