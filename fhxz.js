@@ -269,7 +269,7 @@ body : gj,
    try { 
 
 if(data.match(/pet_buyPet/) == 'pet_buyPet'){ 
- $.msg(`机器管家开启成功:`)
+ $.log(`机器管家开启成功:`)
 await gjcd();
     
  } else { 
@@ -301,7 +301,7 @@ body : cd,
    try { 
 
 if(data.match(/pet_feedPetFood/) == 'pet_feedPetFood'){ 
- $.msg(`充电成功 剩余次数:`+data.match(/remainingFeedTimes":(\d+),/)[1])
+ $.log(`充电成功 剩余次数:`+data.match(/remainingFeedTimes":(\d+),/)[1])
 
 
  } else { 
@@ -333,7 +333,7 @@ body : rqq,
    try { 
 
 if(data.match(/carBox_receiveBoxReward/) == 'carBox_receiveBoxReward'){ 
- $.msg(`热气球/小车开启成功 剩余次数:`+data.match(/boxRemainingTimes":(\d+),/)[1])
+ $.log(`热气球/小车开启成功 剩余次数:`+data.match(/boxRemainingTimes":(\d+),/)[1])
 
 
  } else { 
@@ -365,7 +365,7 @@ body : xl1,
    try { 
 
 if(data.match(/farmland_repair/) == 'farmland_repair'){ 
- $.msg(`1号田修理成功`)
+ $.log(`1号田修理成功`)
 
 
  } else { 
@@ -395,7 +395,7 @@ body : xl2,
    try { 
 
 if(data.match(/farmland_repair/) == 'farmland_repair'){ 
- $.msg(`2号田修理成功`)
+ $.log(`2号田修理成功`)
 
 
  } else { 
@@ -426,7 +426,7 @@ body : xl3,
    try { 
 
 if(data.match(/farmland_repair/) == 'farmland_repair'){ 
- $.msg(`3号田修理成功`)
+ $.log(`3号田修理成功`)
 
 
  } else { 
@@ -456,7 +456,7 @@ body : xl4,
    try { 
 
 if(data.match(/farmland_repair/) == 'farmland_repair'){ 
- $.msg(`4号田修理成功`)
+ $.log(`4号田修理成功`)
 
 
  } else { 
@@ -487,7 +487,7 @@ body : xl5,
    try { 
 
 if(data.match(/farmland_repair/) == 'farmland_repair'){ 
- $.msg(`5号田修理成功`)
+ $.log(`5号田修理成功`)
 
 
  } else { 
@@ -518,7 +518,7 @@ body : xl6,
    try { 
 
 if(data.match(/farmland_repair/) == 'farmland_repair'){ 
- $.msg(`6号田修理成功`)
+ $.log(`6号田修理成功`)
 
 
  } else { 
@@ -548,7 +548,7 @@ body : xl7,
    try { 
 
 if(data.match(/farmland_repair/) == 'farmland_repair'){ 
- $.msg(`7号田修理成功`)
+ $.log(`7号田修理成功`)
 
 
  } else { 
@@ -579,7 +579,7 @@ body : sq1,
    try { 
 
 if(data.match(/farmland_harvest/) == 'farmland_harvest'){ 
- $.msg(`1号田收取成功`)
+ $.log(`1号田收取成功`)
 
 
  } else { 
@@ -609,7 +609,7 @@ body : sq2,
    try { 
 
 if(data.match(/farmland_harvest/) == 'farmland_harvest'){ 
- $.msg(`2号田收取成功`)
+ $.log(`2号田收取成功`)
 
 
  } else { 
@@ -640,7 +640,7 @@ body : sq3,
    try { 
 
 if(data.match(/farmland_harvest/) == 'farmland_harvest'){ 
- $.msg(`3号田收取成功`)
+ $.log(`3号田收取成功`)
 
 
  } else { 
@@ -671,7 +671,7 @@ body : sq4,
    try { 
 
 if(data.match(/farmland_harvest/) == 'farmland_harvest'){ 
- $.msg(`4号田收取成功`)
+ $.log(`4号田收取成功`)
 
 
  } else { 
@@ -704,7 +704,7 @@ body : sq5,
    try { 
 
 if(data.match(/farmland_harvest/) == 'farmland_harvest'){ 
- $.msg(`5号田收取成功`)
+ $.log(`5号田收取成功`)
 
 
  } else { 
@@ -735,7 +735,7 @@ body : sq6,
    try { 
 
 if(data.match(/farmland_harvest/) == 'farmland_harvest'){  
- $.msg(`6号田收取成功`)
+ $.log(`6号田收取成功`)
 
 
  } else { 
@@ -766,7 +766,7 @@ body : sq7,
    try { 
 
 if(data.match(/farmland_harvest/) == 'farmland_harvest'){  
- $.msg(`7号田收取成功`)
+ $.log(`7号田收取成功`)
 
 
  } else { 
@@ -799,7 +799,7 @@ body : sc1,
    try { 
 
 if(data.match(/farmland_plant/) == 'farmland_plant'){ 
- $.msg(`1号田生产成功`)
+ $.log(`1号田生产成功`)
 
 
  } else { 
@@ -830,7 +830,7 @@ body : sc2,
    try { 
 
 if(data.match(/farmland_plant/) == 'farmland_plant'){ 
- $.msg(`2号田生产成功`)
+ $.log(`2号田生产成功`)
 
 
  } else { 
@@ -861,7 +861,7 @@ body : sc3,
    try { 
 
 if(data.match(/farmland_plant/) == 'farmland_plant'){ 
- $.msg(`3号田生产成功`)
+ $.log(`3号田生产成功`)
 
 
  } else { 
@@ -892,7 +892,7 @@ body : sc4,
    try { 
 
 if(data.match(/farmland_plant/) == 'farmland_plant'){ 
- $.msg(`4号田生产成功`)
+ $.log(`4号田生产成功`)
 
 
  } else { 
@@ -923,7 +923,7 @@ body : sc5,
    try { 
 
 if(data.match(/farmland_plant/) == 'farmland_plant'){ 
- $.msg(`5号田生产成功`)
+$.log(`5号田生产成功`)
 
 
  } else { 
@@ -954,7 +954,7 @@ body : sc6,
    try { 
 
 if(data.match(/farmland_plant/) == 'farmland_plant'){ 
- $.msg(`6号田生产成功`)
+ $.log(`6号田生产成功`)
 
 
  } else { 
@@ -986,7 +986,7 @@ body : sc7,
    try { 
 
 if(data.match(/farmland_plant/) == 'farmland_plant'){ 
- $.msg(`7号田生产成功`)
+ $.log(`7号田生产成功`)
 
 
  } else { 
@@ -1019,7 +1019,7 @@ body : qtjs,
 
 if(data.match(/farmland_speedUpAll/) == 'farmland_speedUpAll'){ 
   
- $.msg(`全体加速成功 剩余次数：`+data.match(/remainingAllTimes":(\d+),/)[1])
+$.log(`全体加速成功 剩余次数：`+data.match(/remainingAllTimes":(\d+),/)[1])
 
  await xld1();
  await $.wait(10000);
@@ -1093,7 +1093,7 @@ body : ptjs1,
    try { 
 
 if(data.match(/farmland_speedUp/) == 'farmland_speedUp'){ 
- $.msg(`1号田普通加速成功`)
+ $.log(`1号田普通加速成功`)
 
 
  } else { 
@@ -1124,7 +1124,7 @@ body : ptjs2,
    try { 
 
 if(data.match(/farmland_speedUp/) == 'farmland_speedUp'){ 
- $.msg(`2号田普通加速成功`)
+ $.log(`2号田普通加速成功`)
 
 
  } else { 
@@ -1154,7 +1154,7 @@ body : ptjs3,
    try { 
 
 if(data.match(/farmland_speedUp/) == 'farmland_speedUp'){ 
- $.msg(`3号田普通加速成功`)
+ $.log(`3号田普通加速成功`)
 
 
  } else { 
@@ -1186,7 +1186,7 @@ body : ptjs4,
    try { 
 
 if(data.match(/farmland_speedUp/) == 'farmland_speedUp'){ 
- $.msg(`4号田普通加速成功`)
+ $.log(`4号田普通加速成功`)
 
 
  } else { 
@@ -1216,7 +1216,7 @@ body : ptjs5,
    try { 
 
 if(data.match(/farmland_speedUp/) == 'farmland_speedUp'){ 
- $.msg(`5号田普通加速成功`)
+ $.log(`5号田普通加速成功`)
 
 
  } else { 
@@ -1247,7 +1247,7 @@ body : ptjs6,
    try { 
 
 if(data.match(/farmland_speedUp/) == 'farmland_speedUp'){ 
- $.msg(`6号田普通加速成功`)
+ $.log(`6号田普通加速成功`)
 
 
  } else { 
@@ -1277,7 +1277,7 @@ body : ptjs7,
    try { 
 
 if(data.match(/farmland_speedUp/) == 'farmland_speedUp'){ 
- $.msg(`7号田普通加速成功`)
+ $.log(`7号田普通加速成功`)
 
 
  } else { 
