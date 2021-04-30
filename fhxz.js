@@ -6,9 +6,7 @@
 TG电报群: https://t.me/ningmeng666
 微信公众号：柠檬玩机交流
 圈X
-[task_local]
-#柠檬富豪小镇
-/5 * * * * https://ghproxy.com/https://raw.githubusercontent.com/panghu999/ningmeng/main/fhxz.js, tag=柠檬富豪小镇, enabled=true
+
 [rewrite_local]
 #柠檬富豪小镇
 https://sunnytown.hyskgame.com/api/messages\SaccessToken=\w+&msgtype=system_getGpvGameOptions url script-request-body https://ghproxy.com/https://raw.githubusercontent.com/panghu999/ningmeng/main/fhxz.js
@@ -18,10 +16,11 @@ hostname = sunnytown.hyskgame.com
 https://sunnytown.hyskgame.com/api/messages\SaccessToken=\w+&msgtype=system_getGpvGameOptions url script-request-body https://ghproxy.com/https://raw.githubusercontent.com/panghu999/ningmeng/main/fhxz.js, requires-body=true, timeout=10, tag=柠檬富豪小镇
 #surge
 柠檬富豪小镇 = type=https://sunnytown.hyskgame.com/api/messages\SaccessToken=\w+&msgtype=system_getGpvGameOptions,requires-body=1,max-size=0,script-path=https://ghproxy.com/https://raw.githubusercontent.com/panghu999/ningmeng/main/fhxz.js,script-update-interval=0
-
-
-
 */
+
+// [task_local]
+//#柠檬富豪小镇
+// */10 * * * * https://ghproxy.com/https://raw.githubusercontent.com/panghu999/ningmeng/main/fhxz.js, tag=柠檬富豪小镇, enabled=true
 const $ = new Env('富豪小镇'); 
  let status; 
  status = (status = ($.getval("fhxzstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符 
