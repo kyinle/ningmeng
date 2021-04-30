@@ -7,7 +7,7 @@ https://hyskgame.com/apps/fuhaoxiaozhen/wxshare/index.html?createAt=1619750062&s
 
 TG电报群: https://t.me/ningmeng666
 微信公众号：柠檬玩机交流
-圈X
+#圈X
 
 [rewrite_local]
 #柠檬富豪小镇
