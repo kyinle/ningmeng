@@ -8,7 +8,7 @@ TG电报群: https://t.me/ningmeng666
 圈X
 [task_local]
 #柠檬富豪小镇
-0 8 * * * https://ghproxy.com/https://raw.githubusercontent.com/panghu999/ningmeng/main/fhxz.js, tag=柠檬富豪小镇, enabled=true
+*/5 * * * * https://ghproxy.com/https://raw.githubusercontent.com/panghu999/ningmeng/main/fhxz.js, tag=柠檬富豪小镇, enabled=true
 [rewrite_local]
 #柠檬富豪小镇
 https://sunnytown.hyskgame.com/api/messages\WaccessToken=\w+&msgtype=gfunc_getGfuncInfo url script-request-body https://ghproxy.com/https://raw.githubusercontent.com/panghu999/ningmeng/main/fhxz.js
