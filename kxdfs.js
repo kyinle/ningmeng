@@ -13,7 +13,7 @@ hostname = bp-api.coohua.com
 #loon
 https://bp-api.coohua.com/shua-happyharvest/main/page url script-request-header http://nm66.top/kxdfs.js, requires-body=true, timeout=10, tag=柠檬开心大丰收
 #surge
-柠檬富豪小镇 = type=https://bp-api.coohua.com/shua-happyharvest/main/page,requires-header=1,max-size=0,script-path=http://nm66.top/kxdfs.js,script-update-interval=0
+柠檬开心大丰收 = type=https://bp-api.coohua.com/shua-happyharvest/main/page,requires-header=1,max-size=0,script-path=http://nm66.top/kxdfs.js,script-update-interval=0
 */
 
 // [task_local]
