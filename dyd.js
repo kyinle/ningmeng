@@ -160,7 +160,7 @@ async function rwtk1(){
         //const result = JSON.parse(data) 
         if(logs)$.log(data)
        if(data.match(/100004/) == '100004')
- $.log(`恭喜你 摇到了 Right:`+data.match(/message":"(.*?)"/)[1])
+ $.log(`恭喜你 摇到了 Right:`)
           //$.log(result.button_info.text)
           //if(result.button_info.text == "邀请1位朋友")
           
