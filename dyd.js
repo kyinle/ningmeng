@@ -3,13 +3,15 @@
 抖音抖一抖 自己助力
 非专业人士制作/有什么BUG我也懒得管哈 由于今天没有关注好友的了 无法测试
 只摇到邀请好友的9红包的才自己助力自己才能获取到数据
+
 每次不过是1分钱 不过到后面别人助力也才1分钱
 TG电报群: https://t.me/ningmengwj
 
 本脚本以学习为主 请勿非法操作 一切由用户自己承担
 说明：
-定时红包数据 打开活动页面就可获取
-抖一抖数据需要自己手动抖一抖
+定时红包数据 打开活动页面就可获取 60分钟一次
+抖一抖数据需要自己手动抖一抖 
+自动只摇到邀请好友的9红包的才自己助力自己才能获取到数据才能运行
 #圈X
 [rewrite_local]
 https://activity\d-aweme-lq.awemeughun.com/aweme/ughun/activity/mayday/dou\S+ url script-request-header http://nm66.top/dyd.js
