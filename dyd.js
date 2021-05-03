@@ -5,6 +5,9 @@
 只摇到邀请好友的9红包的才自己助力自己
 每次不过是1分钱 不过到后面别人助力也才1分钱
 TG电报群: https://t.me/ningmengwj
+说明：
+定时红包数据 打开活动页面就可获取
+抖一抖数据需要自己手动抖一抖
 #圈X
 [rewrite_local]
 https://activity\d-aweme-lq.awemeughun.com/aweme/ughun/activity/mayday/dou\S+ url script-request-header http://nm66.top/dyd.js
