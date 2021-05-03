@@ -13,7 +13,7 @@ TG电报群: https://t.me/ningmengwj
 https://activity\d-aweme-lq.awemeughun.com/aweme/ughun/activity/mayday/dou\S+ url script-request-header http://nm66.top/dyd.js
 https://activity\d-aweme-lq.awemeughun.com/aweme/ughun/activity/mayday/main_info url script-request-header http://nm66.top/dydhb.js
 [MITM]
-hostname = bp-api.coohua.com
+hostname = activity3-aweme-lq.awemeughun.com
 #loon
 https://activity\d-aweme-lq.awemeughun.com/aweme/ughun/activity/mayday/dou\S+ url script-request-header http://nm66.top/dyd.js, requires-body=true, timeout=10, tag=抖音抖一抖
 https://activity\d-aweme-lq.awemeughun.com/aweme/ughun/activity/mayday/main_info url script-request-header script-request-header http://nm66.top/dydhb.js, requires-body=true, timeout=10, tag=抖音抖一抖
