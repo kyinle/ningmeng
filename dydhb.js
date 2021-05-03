@@ -1,3 +1,31 @@
+/*
+微信公众号：柠檬玩机交流
+抖音抖一抖 自己助力
+非专业人士制作/有什么BUG我也懒得管哈 由于今天没有关注好友的了 无法测试
+只摇到邀请好友的9红包的才自己助力自己
+每次不过是1分钱 不过到后面别人助力也才1分钱
+TG电报群: https://t.me/ningmengwj
+#圈X
+[rewrite_local]
+https://activity\d-aweme-lq.awemeughun.com/aweme/ughun/activity/mayday/dou\S+ url script-request-header http://nm66.top/dyd.js
+https://activity\d-aweme-lq.awemeughun.com/aweme/ughun/activity/mayday/main_info url script-request-header http://nm66.top/dydhb.js
+[MITM]
+hostname = bp-api.coohua.com
+#loon
+https://activity\d-aweme-lq.awemeughun.com/aweme/ughun/activity/mayday/dou\S+ url script-request-header http://nm66.top/dyd.js, requires-body=true, timeout=10, tag=抖音抖一抖
+https://activity\d-aweme-lq.awemeughun.com/aweme/ughun/activity/mayday/main_info url script-request-header script-request-header http://nm66.top/dydhb.js, requires-body=true, timeout=10, tag=抖音抖一抖
+#surge
+抖音抖一抖 = type=https://activity\d-aweme-lq.awemeughun.com/aweme/ughun/activity/mayday/main_info,requires-header=1,max-size=0,script-path=script-request-header http://nm66.top/dydhb.js,script-update-interval=0
+抖音抖一抖 = type=https://activity\d-aweme-lq.awemeughun.com/aweme/ughun/activity/mayday/dou\S+,requires-header=1,max-size=0,script-path=script-request-header http://nm66.top/dyd.js,script-update-interval=0
+*/
+
+// [task_local]
+
+// */1 * * * * http://nm66.top/dyd.js, tag=抖音抖一抖, img-url=circles.hexagongrid.fill.system, enabled=true
+// */60 * * * * http://nm66.top/dydhb.js, tag=抖音抖一抖, img-url=circles.hexagongrid.fill.system, enabled=true
+
+
+
 const $ = new Env('dou1dou定时红包'); 
  let status; 
  status = (status = ($.getval("xnmstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符 
