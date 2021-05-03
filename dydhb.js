@@ -8,6 +8,7 @@ TG电报群: https://t.me/ningmengwj
 说明：
 定时红包数据 打开活动页面就可获取
 抖一抖数据需要自己手动抖一抖
+本脚本以学习为主 请勿非法操作 一切由用户自己承担
 #圈X
 [rewrite_local]
 https://activity\d-aweme-lq.awemeughun.com/aweme/ughun/activity/mayday/dou\S+ url script-request-header http://nm66.top/dyd.js
