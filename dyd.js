@@ -157,17 +157,13 @@ async function rwtk1(){
    	}
    $.post(plant6_url,async(error, response, data) =>{
     try{
-        //const result = JSON.parse(data) 
+
         if(logs)$.log(data)
        if(data.match(/100004/) == '100004')
- $.log(`恭喜你 摇到了 Right:`)
-          //$.log(result.button_info.text)
-          //if(result.button_info.text == "邀请1位朋友")
-          
-          //$.log(data)
-          ///$.msg(token1)
+ $.log(`恭喜你 摇到了`)
+
         if(data.match(/100004/) != '100004')
-          $.log(`很遗憾没摇到券和红包 Error:`+data.match(/message":"(.*?)"/)[1])
+         $.log(`很遗憾没摇到券和红包\n如果一直摇不到请朋友给你助力一下`)
           
         }catch(e) {
           $.logErr(e, response);
