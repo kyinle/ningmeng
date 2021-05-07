@@ -10,6 +10,8 @@ Tg群 t.me/ningmengwj
 所以只写了每天领过关红包和存钱罐
 每天即可获取3毛钱也可以存着领5毛往上的
 每天运行满100次即可关了就行了
+
+【黑号专用】别管有没有广告 挂着刷着就行了
 [rewrite_local]
 https://qmlzc-api.lw0591.com/v1/userinfo\S+ url script-request-header http://nm66.top/qmlzc.js
 
@@ -26,6 +28,7 @@ const $ = Env('全民来找茬')
 let status;
 status = (status = ($.getval("xnmstatus") || "1") ) > 1 ? `${status}` : ""; 
 xnmheaderArr = []
+xnmurlArr = []
 let xnmheader = $.getdata('xnmheader')
 let xnmurl = $.getdata('xnmurl')
 const logs =0;
@@ -36,7 +39,7 @@ if (isGetCookie) {
    GetCookie();
    $.done()
 } 
-
+//xnmurlArr.push($.getdata('xnmurl'))
 xnmheaderArr.push($.getdata('xnmheader'))
     let xnmcount = ($.getval('xnmcount') || '1');
   for (let i = 2; i <= xnmcount; i++) {
@@ -53,6 +56,7 @@ if (!xnmheaderArr[0]) {
     if (xnmheaderArr[i]) {
       message = ''
       xnmheader = xnmheaderArr[i];
+      //xnmurl = xnmurlArr[i];
       $.index = i + 1;
       console.log(`\n开始【全民来找茬${$.index}】`)
      
@@ -124,7 +128,7 @@ async function cqg(){
         if(result.message == '调用成功')
           $.log("过关红包次数"+result.data.remain_cnt+"\n存金额"+result.data.award+"\n当前红包🧧"+result.data.red_balance)
          
-        if(result.message == '已达最大')
+        if(result.message == '已达到最大次数')
           $.log("小伙子 今天过关红包100次刷完了"+result.message)
           
         }catch(e) {
