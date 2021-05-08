@@ -52,7 +52,7 @@ qmdffurlArr.push($.getdata(`qmdffurl${i}`))
   }
 !(async () => {
 if (!qmdffheaderArr[0]) {
-    $.msg($.name, '【提示】请先获取数据')
+    $.msg($.name, '【提示】请先获取数据 随便种个什么然后点钻石加速收取了')
     return;
   }
    console.log(`------------- 共${qmdffheaderArr.length}账号----------------\n`)
