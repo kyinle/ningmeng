@@ -105,8 +105,8 @@ async function hb1(){
     try{
         const result = JSON.parse(data)
         if(logs)$.log(data)
-        if(result.RedMoney != 0)
-          $.log("刷红包 "+result.RedMoney)
+        if(result.MsgID == 2001)
+          $.log("刷红包 "+result.RedMoney+"\n如果不加了手动去种植一个然后收取了")
     
        if(result.ErrCode == 2103)
           
@@ -134,10 +134,11 @@ async function hb2(){
     try{
         const result = JSON.parse(data)
         if(logs)$.log(data)
-        if(result.RedMoney != 0)
-          $.log("刷红包 "+result.RedMoney)
-         
-        if(result.ErrCode == 2103)
+   if(result.MsgID == 2001)
+          $.log("刷红包 "+result.RedMoney+"\n如果不加了手动去种植一个然后收取了")
+    
+       if(result.ErrCode == 2103)
+          
           $.log("小伙子 今天红包刷完了或者手动去种植一个然后收取了"+result.RedMoney)
           
         }catch(e) {
@@ -162,10 +163,11 @@ async function hb2(){
     try{
         const result = JSON.parse(data)
         if(logs)$.log(data)
-        if(result.RedMoney != 0)
-          $.log("刷红包 "+result.RedMoney)
-         
-        if(result.ErrCode == 2103)
+  if(result.MsgID == 2001)
+          $.log("刷红包 "+result.RedMoney+"\n如果不加了手动去种植一个然后收取了")
+    
+       if(result.ErrCode == 2103)
+          
           $.log("小伙子 今天红包刷完了或者手动去种植一个然后收取了"+result.RedMoney)
           
         }catch(e) {
