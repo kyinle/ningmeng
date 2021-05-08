@@ -107,8 +107,9 @@ async function hb1(){
         if(logs)$.log(data)
         if(result.RedMoney != 0)
           $.log("刷红包 "+result.RedMoney)
-         
-        else
+    
+       if(result.ErrCode == 2103)
+          
           $.log("小伙子 今天红包刷完了或者手动去种植一个然后收取了"+result.RedMoney)
           
         }catch(e) {
@@ -136,7 +137,7 @@ async function hb2(){
         if(result.RedMoney != 0)
           $.log("刷红包 "+result.RedMoney)
          
-        else
+        if(result.ErrCode == 2103)
           $.log("小伙子 今天红包刷完了或者手动去种植一个然后收取了"+result.RedMoney)
           
         }catch(e) {
@@ -164,7 +165,7 @@ async function hb2(){
         if(result.RedMoney != 0)
           $.log("刷红包 "+result.RedMoney)
          
-        else
+        if(result.ErrCode == 2103)
           $.log("小伙子 今天红包刷完了或者手动去种植一个然后收取了"+result.RedMoney)
           
         }catch(e) {
@@ -191,7 +192,7 @@ async function hb2(){
         if(result.ErrCode == 2103)
           $.log("小伙子 今天钻石刷完了或者手动去种植一个然后收取了")
          
-        else
+        if(result.MsgID == 2003)
           $.log("小伙子 刷100钻石成功")
           
         }catch(e) {
