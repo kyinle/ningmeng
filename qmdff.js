@@ -43,7 +43,7 @@ if (isGetCookie) {
    GetCookie();
    $.done()
 } 
-
+qmdffurlArr.push($.getdata('qmdffurl'))
 qmdffheaderArr.push($.getdata('qmdffheader'))
     let qmdffcount = ($.getval('qmdffcount') || '1');
   for (let i = 2; i <= qmdffcount; i++) {
@@ -60,6 +60,7 @@ if (!qmdffheaderArr[0]) {
     if (qmdffheaderArr[i]) {
       message = ''
       qmdffheader = qmdffheaderArr[i];
+      qmdffurl = qmdffurlArr[i];
       $.index = i + 1;
       console.log(`\n开始【全民大丰收${$.index}】`)
      
