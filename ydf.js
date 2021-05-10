@@ -12,7 +12,7 @@ Tg群 t.me/ningmengwj
 号多的可以多撸 一定要先绑定微信和手机号脚本好提现
 请先绑定好微信和手机号
 [rewrite_local]
-https://api.yundongfu.mobi/v1/user/dailyData script-request-header http://nm66.top/ydf.js
+https://api.yundongfu.mobi/v1/user/dailyData url script-request-header http://nm66.top/ydf.js
 
 hostname = *.yundongfu.mobi
 */
