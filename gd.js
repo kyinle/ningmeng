@@ -83,11 +83,11 @@ $.log(gdurl)
 //抽奖
 function bshb(timeout = 0) {
   return new Promise((resolve) => {
-    id = gdurl.match(/id=(\d+)/)[1]
+    //id = gdurl.match(/id=(\d+)/)[1]
 let url = {
         url : 'https://mini-club.codoon.com/v1/red_packet/energy_user/open',
         headers : JSON.parse(gdhd),
-        body : `{"city":"","latitude":24.473684,"longitude":118.122576,"club_id":`+id+`}`,
+        body : `{"city":"","latitude":24.473684,"longitude":118.122576,"club_id":32327}`,
 }
       $.post(url, async (err, resp, data) => {
         try {
@@ -112,9 +112,9 @@ let url = {
 //步数报名列表
 function bslb(timeout = 0) {
   return new Promise((resolve) => {
-    id = gdurl.match(/id=(\d+)/)[1]
+    //id = gdurl.match(/id=(\d+)/)[1]
 let url = {
-        url : 'https://mini-club.codoon.com/v1/red_packet/step_money/list?club_id='+id,
+        url : 'https://mini-club.codoon.com/v1/red_packet/step_money/list?club_id=32327',
         headers : JSON.parse(gdhd),
         
 }
@@ -123,9 +123,9 @@ let url = {
     const result = JSON.parse(data)
 
         if(result.state == 1){
-        
-        bsid = data.match(/"id":(\d+)/)[1]
-        console.log(`\n最新一期步数ID：`+bsid)
+        bsid = result.data[0].id
+        //bsid = data.match(/"id":(\d+)/)[1]
+        console.log(`\n最新一期步数ID：`+result.data[0].id)
 } else {
        console.log('\n步数ID获取失败'+data)
 }
@@ -145,11 +145,11 @@ let url = {
 //步数报名
 function bsbm(timeout = 0) {
   return new Promise((resolve) => {
-    id = gdurl.match(/id=(\d+)/)[1]
+    //id = gdurl.match(/id=(\d+)/)[1]
 let url = {
         url : 'https://mini-club.codoon.com/v1/red_packet/step_money/join',
         headers : JSON.parse(gdhd),
-        body : `{"city":"","latitude":24.473684,"longitude":118.122576,"club_id":`+id+`,"id":${bsid}}`,
+        body : `{"city":"","latitude":24.473684,"longitude":118.122576,"club_id":32327,"id":${bsid}}`,
 }
       $.post(url, async (err, resp, data) => {
         try {
