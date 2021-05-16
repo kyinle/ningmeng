@@ -123,9 +123,9 @@ let url = {
         try {
     const result = JSON.parse(data)
 
-        if(result.state == 0){
-        bsid = result.data[0].id
-        //bsid = data.match(/"id":(\d+)/)[1]
+        if(result.state == 1){
+        //bsid = result.data[0].id
+        bsid = data.match(/"id":(\d+)/)[1]
         console.log(`\n最新一期步数ID：`+bsid)
 } else {
        console.log('\n步数ID获取失败')
