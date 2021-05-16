@@ -46,7 +46,7 @@ let gdurl = $.getdata('gdurl')
     let gdcount = ($.getval('gdcount') || '1');
   for (let i = 2; i <= gdcount; i++) {
     gdhdArr.push($.getdata(`gdhd${i}`))
-    gdurlArr.push($.getdata(`gdurl{i}`))
+    gdurlArr.push($.getdata(`gdurl${i}`))
   }
     console.log(`------------- 共${gdhdArr.length}个账号-------------\n`)
       for (let i = 0; i < gdhdArr.length; i++) {
