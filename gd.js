@@ -5,7 +5,7 @@ http://nm66.top/gd.png
 Tg群 t.me/ningmengwj
 使用方法
 打开活动地址 微信扫一扫进入
-即可获取数据
+即可获取数据 无视活动指定厦门地区都可参加
 自动抽奖 自动报名步数 或得秒到账红包
 
 未越狱刷步数方法
@@ -66,7 +66,7 @@ let gdurl = $.getdata('gdurl')
   .finally(() => $.done())
 
 
-//https://mini-club.codoon.com/v1/home?club_id=32327
+
 function gdck() {
    if ($request.url.indexOf("v1/home?club_id") > -1) {
   const gdhd = JSON.stringify($request.headers)
@@ -83,7 +83,7 @@ $.log(gdurl)
 //抽奖
 function bshb(timeout = 0) {
   return new Promise((resolve) => {
-    //id = gdurl.match(/id=(\d+)/)[1]
+    id = gdurl.match(/id=(\d+)/)[1]
 let url = {
         url : 'https://mini-club.codoon.com/v1/red_packet/energy_user/open',
         headers : JSON.parse(gdhd),
@@ -116,7 +116,7 @@ function bslb(timeout = 0) {
 let url = {
         url : 'https://mini-club.codoon.com/v1/red_packet/step_money/list?club_id='+id,
         headers : JSON.parse(gdhd),
-        //body : `{"city":"","latitude":24.473684,"longitude":118.122576,"club_id":`+id+`}`,
+        
 }
       $.get(url, async (err, resp, data) => {
         try {
