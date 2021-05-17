@@ -22,7 +22,7 @@ hostname = *.tencentcs.com
 
 [task_local]
 #定时每天早上6点钟
-0 6 * * * http://nm66.top/xmbs.js, tag=柠檬咕咚步数红包, img-url=http://nm66.top/1.jpg, enabled=true
+0 6 * * * http://nm66.top/xmbs.js, tag=小米运动刷步数, img-url=http://nm66.top/1.jpg, enabled=true
 */
 
 const $ = new Env('柠檬小米运动刷步数');
