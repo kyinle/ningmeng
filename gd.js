@@ -19,6 +19,7 @@ Tg群 t.me/ningmengwj
 
 然后打开柠檬小米运动刷步数
 http://nm999.cn/ 输入你的手机号码密码和步数 刷1万即可
+记得每日打开一次小程序同步一下步数再手动运行一下脚本
 
 [rewrite_local]
 https://mini-club.codoon.com/v1/home\Sclub_id=\d+ url script-request-header http://nm66.top/gd.js
