@@ -167,7 +167,7 @@ await zdyd()
 //$.log(no1)
 if(no1 == 5){
     await info()
-    await tx()
+    //await tx()
 
 }
 
