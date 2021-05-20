@@ -16,7 +16,7 @@ Tg群 t.me/ningmengwj
 
 [rewrite_local]
 
-http://\S+shop/t555/index.html\St=\S+ url script-request-header http://nm66.top/kkj.js
+http://\S+/t555/index.html\St=\S+ url script-request-header http://nm66.top/kkj.js
 
 hostname = *.kxlock.com,*.kytelnet.com，*.shop
 
