@@ -24,7 +24,7 @@ hostname = *.kxlock.com,*.kytelnet.com，*.shop
 
 // [task_local]
  // 建议每天阅读不要超过100篇文章 1小时一次
-// 0 */60 6-23 * *  http://nm66.top/kkj.js, tag=柠檬看看集自动阅读, img-url=http://nm66.top/1.jpg, enabled=true
+// 0 */60 6-23 * * http://nm66.top/kkj.js, tag=柠檬看看集自动阅读, img-url=http://nm66.top/1.jpg, enabled=true
 
 
 
@@ -195,11 +195,11 @@ async function tx(){
         if(logs)$.log(data)
 
           if(result.code == 0){
-          console.log(`\n提现信息获取`+result.msg)
+          console.log(`\n提现成功`+result.msg)
           //txurl = result.data
 
 } else {
-       console.log(`\n提现信息获取失败`+result.msg)
+       console.log(`\n提现失败`+result.msg)
 }
           
         }catch(e) {
