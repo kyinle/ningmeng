@@ -9,6 +9,8 @@ Tg群 t.me/ningmengwj
 使用方法
 打开活动地址 即可获取数据 
 稳定每天1块多 
+第一次请绑定手机
+请手动点一下界面的看看任务 不然不加积分
 建议每天阅读不要超过100篇文章 
 数据会2小时左右失效
 脚本出错就重新获取跑
@@ -16,46 +18,46 @@ Tg群 t.me/ningmengwj
 
 [rewrite_local]
 
-http://\S+/t555/index.html\St=\S+ url script-request-header http://nm66.top/kkj.js
+http://\S+/t555/index.html\St=\S+ url script-request-header http://nm66.top/kjj.js
 
 hostname = *.kxlock.com,*.kytelnet.com，*.shop
 
 */
 
 // [task_local]
- // 建议每天阅读不要超过100篇文章 1小时一次
-// 0 */60 6-23 * * http://nm66.top/kkj.js, tag=柠檬看看集自动阅读, img-url=http://nm66.top/1.jpg, enabled=true
+ // 
+// 0 */60 12-23 * * http://nm66.top/kjj.js, tag=柠檬看看集自动阅读, img-url=http://nm66.top/1.jpg, enabled=true
 
 
 
 
 const $ = new Env('柠檬看看集自动阅读');
 let status;
-status = (status = ($.getval("kkjstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
-const kkjhdArr = [],kkjcount = ''
-const kkjurlArr = []
-let kkjhd = $.getdata('kkjhd')
-let kkjurl = $.getdata('kkjurl')
+status = (status = ($.getval("kjjstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
+const kjjhdArr = [],kjjcount = ''
+const kjjurlArr = []
+let kjjhd = $.getdata('kjjhd')
+let kjjurl = $.getdata('kjjurl')
 const logs =0;
 var timestamp = (new Date()).valueOf();
 
 !(async () => {
   if (typeof $request !== "undefined") {
-    await kkjck()
+    await kjjck()
    
   } else {
-    kkjhdArr.push($.getdata('kkjhd'))
-    kkjurlArr.push($.getdata('kkjurl'))
-    let kkjcount = ($.getval('kkjcount') || '1');
-  for (let i = 2; i <= kkjcount; i++) {
-    kkjhdArr.push($.getdata(`kkjhd${i}`))
-    kkjurlArr.push($.getdata(`kkjurl${i}`))
+    kjjhdArr.push($.getdata('kjjhd'))
+    kjjurlArr.push($.getdata('kjjurl'))
+    let kjjcount = ($.getval('kjjcount') || '1');
+  for (let i = 2; i <= kjjcount; i++) {
+    kjjhdArr.push($.getdata(`kjjhd${i}`))
+    kjjurlArr.push($.getdata(`kjjurl${i}`))
   }
-    console.log(`------------- 共${kkjhdArr.length}个账号-------------\n`)
-      for (let i = 0; i < kkjhdArr.length; i++) {
-        if (kkjhdArr[i]) {
-          kkjhd = kkjhdArr[i];
-          kkjurl = kkjurlArr[i];
+    console.log(`------------- 共${kjjhdArr.length}个账号-------------\n`)
+      for (let i = 0; i < kjjhdArr.length; i++) {
+        if (kjjhdArr[i]) {
+          kjjhd = kjjhdArr[i];
+          kjjurl = kjjurlArr[i];
           $.index = i + 1;
           console.log(`\n开始【柠檬看看集自动阅读${$.index}】`)
 
@@ -70,14 +72,14 @@ var timestamp = (new Date()).valueOf();
   .finally(() => $.done())
 
 
-function kkjck() {
+function kjjck() {
    if ($request.url.indexOf("index.html") > -1) {
-  const kkjhd = JSON.stringify($request.headers)
-if(kkjhd)    $.setdata(kkjhd,`kkjhd${status}`)
-  const kkjurl = JSON.stringify($request.url)
-if(kkjurl)    $.setdata(kkjurl,`kkjurl${status}`)
-$.log(kkjhd)
-$.log(kkjurl)
+  const kjjhd = JSON.stringify($request.headers)
+if(kjjhd)    $.setdata(kjjhd,`kjjhd${status}`)
+  const kjjurl = JSON.stringify($request.url)
+if(kjjurl)    $.setdata(kjjurl,`kjjurl${status}`)
+$.log(kjjhd)
+$.log(kjjurl)
    $.msg($.name,"",'柠檬看看集'+`${status}` +'数据获取成功！')
  
 }
@@ -90,10 +92,10 @@ $.log(kkjurl)
 //阅读
 async function zdyd(){
  return new Promise((resolve) => {
-     ticket = kkjurl.match(/t=(\S+)"/)[1]
+     ticket = kjjurl.match(/t=(\S+)"/)[1]
  let plant6_url = {
    		url: 'http://ydt.kxlock.com:10080/code008/ydt/reqgouc?ticket='+ticket,
-        //headers: JSON.parse(kkjhd),
+        //headers: JSON.parse(kjjhd),
 
         
    	}
@@ -131,8 +133,8 @@ async function info(){
  return new Promise((resolve) => {
      
  let plant6_url = {
-   		url: 'http://kkj.kytelnet.com:10080/kkjapi/user/wealth?ticket='+ticket,
-        //headers: JSON.parse(kkjhd),
+   		url: 'http://kjj.kytelnet.com:10080/kjjapi/user/wealth?ticket='+ticket,
+        //headers: JSON.parse(kjjhd),
 
         
    	}
@@ -184,8 +186,8 @@ async function tx(){
  return new Promise((resolve) => {
      
  let plant6_url = {
-   		url: 'http://kkj.kytelnet.com:10080/kkjapi/getTxUrl?ticket='+ticket,
-        //headers: JSON.parse(kkjhd),
+   		url: 'http://kjj.kytelnet.com:10080/kjjapi/getTxUrl?ticket='+ticket,
+        //headers: JSON.parse(kjjhd),
 
         
    	}
@@ -216,7 +218,7 @@ async function tx1(){
      
  let plant6_url = {
    		url: txurl,
-        headers: JSON.parse(kkjhd),
+        headers: JSON.parse(kjjhd),
 
         
    	}
