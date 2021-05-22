@@ -6,7 +6,11 @@
 TG电报群: https://t.me/ningmeng666
 微信公众号：柠檬玩机交流
 圈X
-
+使用说明
+去除生产 只保留每天签到和抽奖
+如果遇到提现出错正常
+等跑完广告任务可以提现了
+脚本自动提现 此时可以关了定时
 [rewrite_local]
 #柠檬富豪小镇
 https://sunnytown.hyskgame.com/api/messages\SaccessToken=\w+&msgtype=system_getGpvGameOptions url script-request-body https://ghproxy.com/https://raw.githubusercontent.com/panghu999/ningmeng/main/fhxz.js
@@ -34,7 +38,8 @@ let gj = '[{"type":"pet_buyPet","data":{}}]'
 let cd = '[{"type":"pet_feedPetFood","data":{}}]'
 let rqq = '[{"type":"carBox_receiveBoxReward","data":{}}]'
 let id = ""
-let xl1 = '[{"type":"farmland_repair","data":{"farmlandDefId":1}}]'
+let tx1 = '[{"type":"market_getItemList","data":{}}]'
+
 let xl2 = '[{"type":"farmland_repair","data":{"farmlandDefId":2}}]'
 let xl3 = '[{"type":"farmland_repair","data":{"farmlandDefId":3}}]'
 let xl4 = '[{"type":"farmland_repair","data":{"farmlandDefId":4}}]'
@@ -100,143 +105,143 @@ let rw1 = '[{"type":"dailyQuest_receiveReward","data":{"questDefId":2001,"questT
 await gjcd();//管家充电
     await $.wait(7000);
 await zdcj();//自动抽奖
-    await $.wait(10000);
+    await $.wait(7000);
 await krqq();//热气球/汽车
   await $.wait(1000);
-     await ptjsd1();
-   await $.wait(10000);
-   await xld1();
-   await $.wait(10000);
-    await sqd1();
-await $.wait(10000);
- await scd1();
-  await $.wait(1000);
+     await txlb();//提现列表
+   await $.wait(1000);
+   await tx3mao();//提现3毛
+  // await $.wait(10000);
+   // await sqd1();
+//await $.wait(10000);
+ //await scd1();
+  //await $.wait(1000);
   
-   await ptjsd2();
-   await $.wait(10000);
-   await xld2();
-   await $.wait(10000);
-    await sqd2();
-await $.wait(10000);
- await scd2();
-  await $.wait(1000);
+  // await ptjsd2();
+   //await $.wait(10000);
+  // await xld2();
+  // await $.wait(10000);
+  //  await sqd2();
+//await $.wait(10000);
+// await scd2();
+ // await $.wait(1000);
   
-   await ptjsd3();
-   await $.wait(10000);
-   await xld3();
-   await $.wait(10000);
-    await sqd3();
-await $.wait(10000);
- await scd3();
-  await $.wait(1000);
+ //  await ptjsd3();
+ //  await $.wait(10000);
+ //  await xld3();
+//   await $.wait(10000);
+//    await sqd3();
+//await $.wait(10000);
+ //await scd3();
+ // await $.wait(1000);
   
-   await ptjsd4();
-   await $.wait(10000);
-   await xld4();
-   await $.wait(10000);
-    await sqd4();
-await $.wait(10000);
- await scd4();
-  await $.wait(1000);
+   //await ptjsd4();
+  // await $.wait(10000);
+   //await xld4();
+  // await $.wait(10000);
+    //await sqd4();
+//await $.wait(10000);
+// await scd4();
+//  await $.wait(1000);
   
-   await ptjsd5();
-   await $.wait(10000);
-   await xld5();
-   await $.wait(10000);
-    await sqd5();
-await $.wait(10000);
- await scd5();
-  await $.wait(1000);
+   //await ptjsd5();
+  // await $.wait(10000);
+  // await xld5();
+  // await $.wait(10000);
+  //  await sqd5();
+//await $.wait(10000);
+// await scd5();
+ // await $.wait(1000);
   
-   await ptjsd6();
-   await $.wait(10000);
-   await xld6();
-   await $.wait(10000);
-    await sqd6();
-await $.wait(10000);
- await scd6();
-  await $.wait(1000);
+  // await ptjsd6();
+   //await $.wait(10000);
+  //// await xld6();
+  // await $.wait(10000);
+   // await sqd6();
+//await $.wait(10000);
+// await scd6();
+  //await $.wait(1000);
   
-   await ptjsd7();
-   await $.wait(10000);
-   await xld7();
-   await $.wait(10000);
-    await sqd7();
-await $.wait(10000);
- await scd7();
-  await $.wait(1000);
+ //  await ptjsd7();
+ //  await $.wait(10000);
+ //  await xld7();
+ //  await $.wait(10000);
+  //  await sqd7();
+//await $.wait(10000);
+// await scd7();
+  //await $.wait(1000);
   
-  await ptjsd8();
-   await $.wait(10000);
-   await xld8();
-   await $.wait(10000);
-    await sqd8();
-await $.wait(10000);
- await scd8();
-  await $.wait(1000);
-  await ptjsd9();
-   await $.wait(10000);
-   await xld9();
-   await $.wait(10000);
-    await sqd9();
-await $.wait(10000);
- await scd9();
-  await $.wait(1000);
+  //await ptjsd8();
+   //await $.wait(10000);
+   //await xld8();
+   //await $.wait(10000);
+   // await sqd8();
+//await $.wait(10000);
+ //await scd8();
+ // await $.wait(1000);
+ // await ptjsd9();
+  // await $.wait(10000);
+  // await xld9();
+  // await $.wait(10000);
+  //  await sqd9();
+//await $.wait(10000);
+ //await scd9();
+  //await $.wait(1000);
   
-  await xld1();
- await $.wait(10000);
- await sqd1();
-await $.wait(10000);
- await scd1();
-await $.wait(1000);
-  await xld2();
- await $.wait(10000);
- await sqd2();
-await $.wait(10000);
- await scd2();
-await $.wait(1000);
-  await xld3();
- await $.wait(10000);
- await sqd3();
-await $.wait(10000);
- await scd3();
-await $.wait(1000);
-  await xld4();
- await $.wait(10000);
- await sqd4();
-await $.wait(10000);
- await scd4();
-await $.wait(1000);
-  await xld5();
- await $.wait(10000);
- await sqd5();
-await $.wait(10000);
- await scd5();
-await $.wait(1000);
-  await xld6();
- await $.wait(10000);
- await sqd6();
-await $.wait(10000);
- await scd6();
-await $.wait(1000);
-  await xld7();
- await $.wait(10000);
- await sqd7();
-await $.wait(10000);
- await scd7();
-await $.wait(1000);
+ // await xld1();
+ //await $.wait(10000);
+ //await sqd1();
+//await $.wait(10000);
+// await scd1();
+//await $.wait(1000);
+//  await xld2();
+ //await $.wait(10000);
+// await sqd2();
+//await $.wait(10000);
+ //await scd2();
+//await $.wait(1000);
+//  await xld3();
+// await $.wait(10000);
+ ////await sqd3();
+//await $.wait(10000);
+ //await scd3();
+//await $.wait(1000);
+//  await xld4();
+// await $.wait(10000);
+// await sqd4();
+//await $.wait(10000);
+// await scd4();
+//await $.wait(1000);
+ // await xld5();
+ //await $.wait(10000);
+ //await sqd5();
+//await $.wait(10000);
+ //await scd5();
+//await $.wait(1000);
+//  await xld6();
+// await $.wait(10000);
+// await sqd6();
+//await $.wait(10000);
+// await scd6();
+//await $.wait(1000);
+  //await xld7();
+// await $.wait(10000);
+// await sqd7();
+//await $.wait(10000);
+// await scd7();
+//await $.wait(1000);
  //await quantijs();
-  await xld8();
- await $.wait(10000);
- await sqd8();
-await $.wait(10000);
- await scd8();
-await $.wait(1000);
-  await xld9();
- await $.wait(10000);
- await sqd9();
-await $.wait(10000);
- await scd9();
+  //await xld8();
+// await $.wait(10000);
+// await sqd8();
+//await $.wait(10000);
+// await scd8();
+//await $.wait(1000);
+ // await xld9();
+// await $.wait(10000);
+ //await sqd9();
+//await $.wait(10000);
+ //await scd9();
 //await $.wait(1000);
    } 
  }} 
@@ -341,7 +346,7 @@ if(data.match(/pet_feedPetFood/) == 'pet_feedPetFood'){
 
 
  } else { 
- $.log(`机器管家充电失败次数`) 
+ $.log(`机器管家充电失败次数不足`) 
 
  } 
    } catch (e) { 
@@ -385,27 +390,27 @@ if(data.match(/carBox_receiveBoxReward/) == 'carBox_receiveBoxReward'){
  }) 
  } 
 
-//修理部分
-function xld1(timeout = 0) { 
+//自动提现
+function txlb(timeout = 0) { 
  return new Promise((resolve) => { 
    
 id = fhxzurl.match(/Token=\S+&/)
  //$.log(id) 
    let url = { 
- url : 'https://sunnytown.hyskgame.com/api/messages?access'+id+'msgtype=farmland_repair', 
+ url : 'https://sunnytown.hyskgame.com/api/messages?access'+id+'msgtype=market_getItemList', 
 
-body : xl1,
+body : tx1,
    } 
  $.post(url, async (err, resp, data) => { 
 
    try { 
 
-if(data.match(/farmland_repair/) == 'farmland_repair'){ 
- $.log(`1号田修理成功`)
-
+if(data.match(/market_getItemList/) == 'market_getItemList'){ 
+ $.log(`提现列表获取成功 提现id:`+data.match(/"itemDefId":(\d{5}),/)[1]) 
+txid1 = data.match(/"itemDefId":(\d{5}),/)[1]
 
  } else { 
- $.log(`1号田无需修理`) 
+ $.log(`提现列表获取失败或广告任务未刷完请骚等\n或今日已经提现`) 
  
  } 
    } catch (e) { 
@@ -416,26 +421,26 @@ if(data.match(/farmland_repair/) == 'farmland_repair'){
  },timeout) 
  }) 
  } 
-function xld2(timeout = 0) { 
+
+function tx3mao(timeout = 0) { 
  return new Promise((resolve) => { 
    
-id = fhxzurl.match(/Token=\S+&/)
-//$.log(id) 
+ 
    let url = { 
- url : 'https://sunnytown.hyskgame.com/api/messages?access'+id+'msgtype=farmland_repair', 
+ url : 'https://sunnytown.hyskgame.com/api/messages?access'+id+'msgtype=market_exchange', 
 
-body : xl2,
+body : '[{"type":"market_exchange","data":{"itemDefId":'+txid1+'}}]',
    } 
  $.post(url, async (err, resp, data) => { 
 
    try { 
 
-if(data.match(/farmland_repair/) == 'farmland_repair'){ 
- $.log(`2号田修理成功`)
+if(data.match(/market_exchange/) == 'market_exchange'){ 
+ $.log(`3毛提现成功`)
 
 
  } else { 
- $.log(`2号田无需修理`) 
+ $.log(`3毛提现失败或广告任务未刷完\n或今日已经提现了`) 
  
  } 
    } catch (e) { 
@@ -1234,61 +1239,61 @@ if(data.match(/farmland_speedUpAll/) == 'farmland_speedUpAll'){
   
 $.log(`全体加速成功 剩余次数：`+data.match(/remainingAllTimes":(\d+),/)[1])
 
- await xld1();
- await $.wait(10000);
- await sqd1();
-await $.wait(10000);
- await scd1();
-await $.wait(1000);
-  await xld2();
- await $.wait(10000);
- await sqd2();
-await $.wait(10000);
- await scd2();
-await $.wait(1000);
-  await xld3();
- await $.wait(10000);
- await sqd3();
-await $.wait(10000);
- await scd3();
-await $.wait(1000);
-  await xld4();
- await $.wait(10000);
- await sqd4();
-await $.wait(10000);
- await scd4();
-await $.wait(1000);
-  await xld5();
- await $.wait(10000);
- await sqd5();
-await $.wait(10000);
- await scd5();
-await $.wait(1000);
-  await xld6();
- await $.wait(10000);
- await sqd6();
-await $.wait(10000);
- await scd6();
-await $.wait(1000);
-  await xld7();
- await $.wait(10000);
- await sqd7();
-await $.wait(10000);
- await scd7();
-await $.wait(1000);
- await xld8();
- await $.wait(10000);
- await sqd8();
-await $.wait(10000);
- await scd8();
- await $.wait(1000);
- await xld9();
- await $.wait(10000);
- await sqd9();
-await $.wait(10000);
- await scd9();
+// await xld1();
+// await $.wait(10000);
+// await sqd1();
+//await $.wait(10000);
+// await scd1();
+//await $.wait(1000);
+ // await xld2();
+// await $.wait(10000);
+// await sqd2();
+//await $.wait(10000);
+// await scd2();
+//await $.wait(1000);
+ // await xld3();
+ //await $.wait(10000);
+// await sqd3();
+//await $.wait(10000);
+// await scd3();
+//await $.wait(1000);
+ // await xld4();
+ //await $.wait(10000);
+// await sqd4();
+//await $.wait(10000);
+ //await scd4();
+//await $.wait(1000);
+ // await xld5();
+ //await $.wait(10000);
+ //await sqd5();
+//await $.wait(10000);
+// await scd5();
+//await $.wait(1000);
+ // await xld6();
+// await $.wait(10000);
+// await sqd6();
+//await $.wait(10000);
+ //await scd6();
+//await $.wait(1000);
+ // await xld7();
+// await $.wait(10000);
+// await sqd7();
+//await $.wait(10000);
+ //await scd7();
+//await $.wait(1000);
+ //await xld8();
+// await $.wait(10000);
+// await sqd8();
+//await $.wait(10000);
+// await scd8();
+// await $.wait(1000);
+// await xld9();
+// await $.wait(10000);
+// await sqd9();
+//await $.wait(10000);
+// await scd9();
  } else { 
- $.log(`全体加速失败或次数不够`) 
+ $.log(`今日签到任务已完成\n全体加速失败或次数不够`) 
  
  } 
    } catch (e) { 
