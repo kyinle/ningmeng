@@ -7,14 +7,16 @@ Tg群 t.me/ningmengwj
 
 使用方法
 第一次请登录绑定 并且手动玩到5关后
-点击游戏里的兑换50礼包 再去公众号去领取0.3
+再去公众号去领取0.3
+========================================
+获取数据 点击钻石补给 看一条广告即可获取
 然后开启脚本重新打开游戏获取数据持续运行脚本
 一天大概100+钻石 
 
 
 [rewrite_local]
 
-https://xxx2.67mob.com/v2/auth/login-by-wx url script-response-body http://nm66.top/chxx.js
+https://xxx2.67mob.com/v2/xxx-game/play-ad url script-request-header http://nm66.top/chxx.js
 
 hostname = *.67mob.com
 
@@ -35,15 +37,13 @@ const kkjhdArr = [],kkjcount = ''
 const kkjurlArr = []
 let kkjhd = $.getdata('kkjhd')
 let kkjurl = $.getdata('kkjurl')
-let kkjbody = $.getdata('kkjbody')
+//let kkjbody = $.getdata('kkjbody')
 const logs =0;
 var timestamp = (new Date()).valueOf();
-     sj = JSON.parse(kkjbody)
-tk = sj.match(/token":"(.*?)",/)[1]
-id = sj.match(/uid":(.*?),/)[1]
 
 
-hd = {"Accept": "*/*","Accept-Encoding": "gzip, deflate, br","Accept-Language": "zh-cn","Cache-Control": "no-cache","Connection": "keep-alive","Content-Type": "application/x-www-form-urlencoded","Host": "xxx2.67mob.com","User-Agent": "PopStar-master-mobile/3.0 CFNetwork/1209 Darwin/20.2.0","token": tk,"uid": id}
+
+
 !(async () => {
   if (typeof $request !== "undefined") {
     await kkjck()
@@ -76,16 +76,15 @@ await ad()
 
 
 function kkjck() {
-   if ($request.url.indexOf("auth/login-by-wx") > -1) {
+   if ($request.url.indexOf("play-ad") > -1) {
   const kkjhd = JSON.stringify($request.headers)
 if(kkjhd)    $.setdata(kkjhd,`kkjhd${status}`)
   const kkjurl = JSON.stringify($request.url)
 if(kkjurl)    $.setdata(kkjurl,`kkjurl${status}`)
-const kkjbody = JSON.stringify($response.body)
-if(kkjbody)    $.setdata(kkjbody,`kkjbody${status}`)
+
 $.log(kkjhd)
 $.log(kkjurl)
-$.log(kkjbody)
+
    $.msg($.name,"",'柠檬彩虹消消消'+`${status}` +'数据获取成功！')
  
 }
@@ -97,7 +96,7 @@ async function start(){
 
  let plant6_url = {
        url: `https://xxx2.67mob.com/v2/xxx-game/start`,
-        headers: hd,
+        headers: JSON.parse(kkjhd),
         body: `{"channel_id":188}`,
         
     }
@@ -146,7 +145,7 @@ const sfbody = `{
      
  let plant6_url = {
      url:  `https://xxx2.67mob.com/v2/xxx-game/pass`,
-        headers: hd,
+        headers: JSON.parse(kkjhd),
         body: sfbody,
         
     }
@@ -177,14 +176,14 @@ const adbody = `{
   "ad_pos_id" : 31,
   "channel_id" : 188,
   "ad_company" : "2",
-  "gk" : 6,
+  "gk" : 5,
   "channel_sub_id" : 1,
   "action_type" : 3
 }`;
      
  let plant6_url = {
      url:  `https://xxx2.67mob.com/v2/xxx-game/play-ad`,
-        headers: hd,
+        headers: JSON.parse(kkjhd),
         body: adbody,
         
     }
