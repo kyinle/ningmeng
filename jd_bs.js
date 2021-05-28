@@ -93,7 +93,7 @@ function bs2000(timeout = 0) {
              console.log("柠檬赚京豆步数换京豆:2000步"+data.msg)
           //await notify.sendNotify(`${$.name} - 柠檬赚京豆步数换京豆`, `京东账号${$.index} ${$.nickName}`+"\n柠檬赚京豆步数换京豆:2000步\n"+data.msg)
             } else {
-               console.log("柠檬赚京豆步数换京豆:2000步"+data.msg+" 步数不足或今日你已经兑换")
+               console.log("柠檬赚京豆步数换京豆:2000步"+data.msg)
                //await notify.sendNotify(`${$.name} - 柠檬赚京豆步数换京豆`, `京东账号${$.index} ${$.nickName}`+"\n柠檬赚京豆步数换京豆2000步\n步数不足或今日你已经兑换")
             }
         } catch (e) {
@@ -134,7 +134,7 @@ function bs5000(timeout = 0) {
              console.log("柠檬赚京豆步数换京豆:5000步"+data.msg)
           //await notify.sendNotify(`${$.name} - 柠檬赚京豆步数换京豆`, `京东账号${$.index} ${$.nickName}`+"\n柠檬赚京豆步数换京豆:5000步\n"+data.msg)
             } else {
-               console.log("柠檬赚京豆步数换京豆:5000步"+data.msg+" 步数不足或今日你已经兑换")
+               console.log("柠檬赚京豆步数换京豆:5000步"+data.msg)
                //await notify.sendNotify(`${$.name} - 柠檬赚京豆步数换京豆`, `京东账号${$.index} ${$.nickName}`+"\n柠檬赚京豆步数换京豆5000步\n步数不足或今日你已经兑换")
             }
         } catch (e) {
@@ -176,7 +176,7 @@ function bs10000(timeout = 0) {
              console.log("柠檬赚京豆步数换京豆:10000步"+data.msg)
           //await notify.sendNotify(`${$.name} - 柠檬赚京豆步数换京豆`, `京东账号${$.index} ${$.nickName}`+"\n柠檬赚京豆步数换京豆:10000步\n"+data.msg)
             } else {
-               console.log("柠檬赚京豆步数换京豆:10000步"+data.msg+" 步数不足或今日你已经兑换")
+               console.log("柠檬赚京豆步数换京豆:10000步"+data.msg)
                //await notify.sendNotify(`${$.name} - 柠檬赚京豆步数换京豆`, `京东账号${$.index} ${$.nickName}`+"\n柠檬赚京豆步数换京豆10000步\n步数不足或今日你已经兑换")
             }
         } catch (e) {
@@ -217,7 +217,7 @@ function bs20000(timeout = 0) {
              console.log("柠檬赚京豆步数换京豆:20000步"+data.msg)
           //await notify.sendNotify(`${$.name} - 柠檬赚京豆步数换京豆`, `京东账号${$.index} ${$.nickName}`+"\n柠檬赚京豆步数换京豆:20000步\n"+data.msg)
             } else {
-               console.log("柠檬赚京豆步数换京豆:20000步"+data.msg+" 步数不足或今日你已经兑换")
+               console.log("柠檬赚京豆步数换京豆:20000步"+data.msg)
                //await notify.sendNotify(`${$.name} - 柠檬赚京豆步数换京豆`, `京东账号${$.index} ${$.nickName}`+"\n柠檬赚京豆步数换京豆20000步\n步数不足或今日你已经兑换")
             }
         } catch (e) {
